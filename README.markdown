@@ -6,7 +6,11 @@ ResortableCollection is a handy utility class extension of the Backbone Collecti
 
 ## Collection.sort()
 
-    Collection.sort now accepts 2 arguments:
+Collection.sort now accepts 2 arguments:
 
  * silent: behaves exactly as in vanilla Backbone. Set to true to suppress the "reset" event on sort
  * comparator: pass this a comparison function to sort the collection by that comparison. This will override whichever comparator is set as Collection.comparator. To return to sorting by default comparator merely call sort with no comparator option set. This accepts both the sortBy comparator already accepted by Backbone for Collection.comparator as well as the classical (a,b) comparison function supported by javascript's Array.sort.
+
+# License
+
+This code is released under the terms of the MIT license.

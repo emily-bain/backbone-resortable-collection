@@ -1,5 +1,8 @@
-// A Backbone Collection designed to behave nicely with regards
+// ResortableCollection
+// Copyright Jeff Bain, 2011
+// Description: A Backbone Collection designed to behave nicely with regards
 // to sorting by multiple criteria
+// Code is distributed under the MIT license
 
 var ResortableCollection = Backbone.Collection.extend({
   // sort: This takes the Backbone sort function and adds some logic to check
