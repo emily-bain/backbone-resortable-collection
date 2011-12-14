@@ -1,10 +1,12 @@
 # Resortable Collection for Backbone
 
-Just a little handy extension to the Backbone Collection class. Intended to add a bit more flexibility to the ordering of the Collection classes
+ResortableCollection is a handy utility class extension of the Backbone Collection class. Intended to add a bit more flexibility to the ordering of the Collection classes. This is intended for cases where one might want to have the choice to reorder the Collection class by any of several attributes while taking advantage of the Collection classes ability to maintain an ordering.
 
 # Usage
 
 ## Collection.sort()
-Collection.sort now accepts 2 arguments:
-* silent: behaves exactly the same as in vanilla Backbone. suppresses "reset" event triggering on sort
-* comparator: overrides the default comparator for Backbone. This becomes "active comparator" and inserts will keep the collection ordered via this comparator until the list is sorted by a new comparator
+
+    Collection.sort now accepts 2 arguments:
+
+ * silent: behaves exactly as in vanilla Backbone. Set to true to suppress the "reset" event on sort
+ * comparator: pass this a comparison function to sort the collection by that comparison. This will override whichever comparator is set as Collection.comparator. To return to sorting by default comparator merely call sort with no comparator option set. This accepts both the sortBy comparator already accepted by Backbone for Collection.comparator as well as the classical (a,b) comparison function supported by javascript's Array.sort.
