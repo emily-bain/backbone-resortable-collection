@@ -1,3 +1,5 @@
+Note: This is now mostly redundant, since Backbone as of 0.9.0 supports both sortBy & classic sort comparators which was the main benefit of this work. It is kept up for historical purposes.
+
 # Resortable Collection for Backbone
 
 ResortableCollection is a handy utility class extension of the Backbone Collection class. Intended to add a bit more flexibility to the ordering of the Collection classes. This is intended for cases where one might want to have the choice to reorder the Collection class by any of several attributes while taking advantage of the Collection classes ability to maintain an ordering.
